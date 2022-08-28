@@ -24,7 +24,7 @@ const App = () => {
         items={items}
         title={"Select your options"}
         multiSelect={true}
-        onSelect={(value: any) => console.log(value)}
+        onSelect={(value: any) => console.log(value.value)}
       />
     </div>
   )

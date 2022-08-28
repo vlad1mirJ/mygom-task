@@ -22,17 +22,17 @@ export function Dropdown({
   onSelect,
 }: DropdownProps) {
   const [open, setOpen] = useState(false)
-  const [selection, setSelection] = useState<any>([])
+  const [selection, setSelection] = useState<ItemType[]>([])
   const toggle = () => setOpen(prev => !prev)
 
   function handleOnClick(item: ItemType) {
     if (!selection.some((current: ItemType) => current.id === item.id)) {
       if (!multiSelect) {
         setSelection([item])
-        onSelect && onSelect(item.id)
+        onSelect && onSelect(item)
       } else if (multiSelect) {
         setSelection([...selection, item])
-        onSelect && onSelect(item.id)
+        onSelect && onSelect(item)
       }
     } else {
       let selectionAfterRemoval = selection
