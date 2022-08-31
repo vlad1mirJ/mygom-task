@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -18,9 +16,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #202020;
   background-color: #fbfbfb;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -28,5 +23,3 @@ body {
   width: 100%;
   margin: auto;
 }
-
-
